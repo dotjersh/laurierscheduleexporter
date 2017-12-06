@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>LORIS SCHEDULE SCRAPER</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script  src="js/index.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div>
+    <p>
+      <h1>LORIS Exporter</h1>
+      <ol>
+        <li>Go to <em>Student Detail Schedule</em> in Loris</li>
+        <li>Right click and select, <em>View Page Source</em></li>
+        <li>Copy page source and paste in box below</li>
+        <li>Click Download</li>
+        <li>Open downloaded file in desired Calendar Software</li>
+    </ol>
+    </p>
+
+    <textarea class="text"></textarea>
+    <button onclick="scrape()">Download</button>
+  </div>
+</body>
+</html>

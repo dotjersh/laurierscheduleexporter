@@ -1,3 +1,7 @@
+window.onload = function() {
+  $('.input-daterange').datepicker({});
+}
+
 function scrape() {
   // a few basic variables to start
   var dayOfWeek = ["S", "M", "T", "W", "R", "F", "S"];
@@ -27,8 +31,8 @@ function scrape() {
 
   // loop through every row in the table
   selectAll("#schedule tbody tr").forEach(function(row) {
-    var startDay = new Date("2018/12/15");
-    var endDay = new Date("2019/1/15");
+    var startDay = new Date(select("#startDate").value);
+    var endDay = new Date(select("#endDate").value);
 
     // Array in the order: [0]course, [1] class type, [2]days, [3]time, [4]building, [5]instructor
     var data = [];
